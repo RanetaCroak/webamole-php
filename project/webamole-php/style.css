@@ -1,0 +1,43 @@
+body {
+    background-color: lightseagreen;
+}
+.slider {
+  display: block;
+  /*min and max changes size of slider?*/
+  height: 320px;
+  min-width: 260px;
+  max-width: 640px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  background-color: wheat;
+} 
+/* Ocultar el slider numérico */
+#puntuacion {
+    display:none;
+  }
+  
+  /* Mostrar las estrellas */
+  #puntuacion + .estrellas {
+    display: none;
+    align-items: center;
+    /* Establecer una imagen de fondo para cada posible valor del slider */
+    background-image: url("img/star.png");  
+    background-color: antiquewhite;
+  }
+  #puntuacion[value="1"] + .estrellas {
+    background-image: url("img/star.png");
+  }
+  #puntuacion[value="2"] + .estrellas {
+    background-image: url("img/star.png");
+  }
+  #puntuacion[value="3"] + .estrellas {
+    background-image: url("img/star.png");
+  }
+  #puntuacion[value="4"] + .estrellas {
+    background-image: url("img/star.png");
+  }
+  #puntuacion[value="5"] + .estrellas {
+    background-image: url("img/star.png");
+  }
+  
